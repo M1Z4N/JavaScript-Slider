@@ -1,0 +1,124 @@
+body {
+    background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
+    background-size: 600% 100%;
+    animation: gradient 10s linear infinite;
+    animation-direction: alternate;
+    font-family: 'Baloo 2', cursive;
+    color: white;
+    overflow: hidden;
+}
+
+
+#jeden,
+#dwa,
+#trzy,
+#cztery,
+#piec {
+    transition: 0.5s;
+    transform: scale(1, 1);
+    height: 30px;
+    width: 50px;
+    border: solid white 3px;
+}
+
+#jeden:hover,
+#dwa:hover,
+#trzy:hover,
+#cztery:hover,
+#piec:hover {
+    transition: 0.5s;
+    transform: scale(0.8, 0.8);
+}
+
+nav {
+    animation: slideInFromRight 1s ease-out 1;
+    position: relative;
+    top: 2%;
+    text-align: center;
+}
+
+img {
+    animation: slideInFromLeft 1s ease-out 1;
+    border-radius: 14px;
+    border: solid white 6px;
+    width: 800px;
+    height: 500px;
+}
+
+#slider {
+    padding: 2px;
+    text-align: center;
+}
+
+h1 {
+    animation: transitionIn 1s ease-out 1;
+    text-align: center;
+    font-size: 50px;
+}
+
+#stopka {
+    animation: slideInFromBottom 1s ease-out 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#github {
+    font-weight: bold;
+    color: white;
+}
+
+/* Animations */
+
+@keyframes gradient {
+    0% {
+        background-position: 0%
+    }
+
+    100% {
+        background-position: 100%
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-200%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(150%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

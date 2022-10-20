@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Slider w JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+<body onload="zmienSlajd()">
+    <header>
+        <h1>Slider</h1>
+    </header>
+    
+    <div id="slider"></div>
+
+    <nav>
+        <span onClick="ustawSlajd(1)" style="cursor:pointer;"><img src="Images/1.jpg" id="jeden"></span>
+        <span onClick="ustawSlajd(2)" style="cursor:pointer;"><img src="Images/2.jpg" id="dwa"></span>
+        <span onClick="ustawSlajd(3)" style="cursor:pointer;"><img src="Images/3.jpg" id="trzy"></span>
+        <span onClick="ustawSlajd(4)" style="cursor:pointer;"><img src="Images/4.jpg" id="cztery"></span>
+        <span onClick="ustawSlajd(5)" style="cursor:pointer;"><img src="Images/5.jpg" id="piec"></span>
+    </nav>
+
+    <footer id="stopka">
+        <p>Created by Artur Nazim &nbsp&nbsp&nbsp&nbsp Github: <a href="https://github.com/M1Z4N" id="github"
+                target="_blank">M1Z4N</a></p>
+    </footer>
+</body>
+
+</html>
